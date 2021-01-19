@@ -1,0 +1,119 @@
+/* COLORS */
+/* OTHER */
+.bright {
+  color: #c0df34; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Karla', sans-serif;
+  color: #fff; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e5eff5;
+  padding: 3rem; }
+
+h1 {
+  font-size: 2.5rem;
+  color: #2ab2af;
+  margin-bottom: 2.5rem; }
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.75rem; }
+
+ul {
+  font-size: 1.4rem;
+  color: #e5eff5; }
+  ul li {
+    margin-bottom: 0.35rem;
+    opacity: 0.75; }
+
+footer {
+  position: absolute;
+  bottom: 0; }
+
+.card {
+  width: 635px;
+  height: 490px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 260px;
+  grid-template-areas: "header header" "subs info";
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 30px -20px #000; }
+  .card header {
+    grid-area: header;
+    background-color: #fff;
+    padding: 4rem; }
+    .card header p {
+      font-size: 1.6rem;
+      color: #98a6bd;
+      line-height: 2.5rem; }
+  .card .info {
+    grid-area: info;
+    padding: 4rem;
+    background-color: #6bbcbc; }
+  .card .subs {
+    grid-area: subs;
+    padding: 4rem;
+    background-color: #2ab2af; }
+    .card .subs span {
+      display: flex;
+      color: #e5eff5;
+      align-items: center;
+      font-size: 1.6rem; }
+      .card .subs span p {
+        margin: 0;
+        opacity: 0.5; }
+      .card .subs span .price {
+        color: #fff;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-right: 1.5rem; }
+    .card .subs p {
+      font-size: 1.6rem;
+      margin-top: 0.7rem;
+      color: #e5eff5; }
+    .card .subs button {
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 3rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      background-color: #c0df34;
+      box-shadow: 0px 10px 25px -20px;
+      transition: transform 0.1s;
+      outline: none; }
+      .card .subs button::after {
+        content: "Sign up";
+        color: #fff;
+        opacity: 0.75; }
+      .card .subs button:hover {
+        background-color: #a5be30; }
+      .card .subs button:active {
+        transform: scale(0.95); }
+
+@media (max-width: 725px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; }
+  footer {
+    position: relative; } }

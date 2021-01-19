@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Karla', sans-serif;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $light-gray;
+  padding: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $cyan;
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+ul {
+  font-size: 1.4rem;
+  color: $light-gray;
+  li {
+    margin-bottom: 0.35rem;
+    opacity: 0.75;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
